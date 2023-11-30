@@ -1,0 +1,85 @@
+// Layout variables
+
+// Breakpoint widths
+$width-xs: 0 !default;
+// Small screen / phone
+$width-sm: 544px !default;
+// Medium screen / tablet
+$width-md: 768px !default;
+// Large screen / desktop
+$width-lg: 992px !default;
+// Extra large screen / wide desktop
+$width-xl: 1280px !default;
+
+// Responsive container widths
+$container-sm: $width-sm !default;
+$container-md: $width-md !default;
+$container-lg: $width-lg !default;
+$container-xl: $width-xl !default;
+
+// Breakpoints in the form (name: length)
+$breakpoints: (
+  sm: $width-sm,
+  md: $width-md,
+  lg: $width-lg,
+  xl: $width-xl,
+) !default;
+
+// This map in the form (breakpoint: variant) is used to iterate over
+// breakpoints and create both responsive and non-responsive classes in one
+// loop:
+$responsive-variants: (
+  '': '',
+  sm: '-sm',
+  // md: '-md', // disabled by default
+  lg: '-lg',
+  // xl: '-xl', // disabled by default
+) !default;
+
+// rem unit support
+
+$spacer-map-rem: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+) !default;
+
+$spacers-large-rem: (
+  7: 1.75rem,
+  8: 2rem,
+  9: 2.25rem,
+  10: 2.5rem,
+  //
+  12: 3rem,
+  14: 4rem,
+  16: 5rem,
+  18: 6rem,
+) !default;
+
+$spacer-map-rem-extended: map-merge(
+  $spacer-map-rem,
+  $spacers-large-rem
+) !default;
+
+// extra rem units (px: base rem)
+
+$spacer-map-rem-extra: (
+  0: 0,
+  15: 0.83rem,
+  30: 1.66rem,
+  45: 2.5rem,
+  60: 3.33rem,
+  75: 4.16rem,
+  90: 5rem,
+  105: 5.83rem,
+  120: 6.66rem,
+  135: 7.5rem,
+  150: 8.33rem,
+  //
+  175: 9.72rem,
+  200: 11.11rem,
+) !default;

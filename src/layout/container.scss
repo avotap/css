@@ -1,0 +1,45 @@
+// Fixed-width, centered column for site content.
+// Handy container styles that match our breakpoints
+
+.t-c-sm,
+.t-c-md,
+.t-c-lg,
+.t-c,
+.t-c-xl,
+.t-c-fluid {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// 544px
+.t-c-sm {
+  max-width: $width-sm;
+}
+
+// 768px
+.t-c-md {
+  max-width: $container-md;
+}
+
+// 1004px - this matches the current fixed width: 980px + padding: px-3
+.t-c-lg {
+  max-width: $container-lg;
+}
+
+// 1280px
+.t-c,
+.t-c-xl {
+  max-width: $container-xl;
+}
+
+// fluid container
+// without gutters
+.t-c-100 {
+  width: 100%;
+}

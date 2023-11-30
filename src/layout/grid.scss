@@ -1,0 +1,56 @@
+// Row
+.t-row {
+  --bs-gutter-x: 1.5rem;
+  // supposed to be 0
+  // replaced because of the block-editing
+  --bs-gutter-y: 1.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.t-row > * {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  // supposed to be margin instead of padiing
+  // replaced because of the block-editing
+  padding-top: var(--bs-gutter-y);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  flex-shrink: 0;
+}
+
+// Columns
+.t-col-1 { width: (1 * 0.0833333333 * 100%); }
+.t-col-2 { width: (2 * 0.0833333333 * 100%); }
+.t-col-3 { width: (3 * 0.0833333333 * 100%); }
+.t-col-4 { width: (4 * 0.0833333333 * 100%); }
+.t-col-5 { width: (5 * 0.0833333333 * 100%); }
+.t-col-6 { width: (6 * 0.0833333333 * 100%); }
+.t-col-7 { width: (7 * 0.0833333333 * 100%); }
+.t-col-8 { width: (8 * 0.0833333333 * 100%); }
+.t-col-9 { width: (9 * 0.0833333333 * 100%); }
+.t-col-10 { width: (10 * 0.0833333333 * 100%); }
+.t-col-11 { width: (11 * 0.0833333333 * 100%); }
+.t-col-12 { width: 100%; }
+
+@each $breakpoint in map-keys($breakpoints) {
+  @include breakpoint($breakpoint) {
+    .t-col-#{$breakpoint}-1 { width: ( 1 * 0.0833333333 * 100%); }
+    .t-col-#{$breakpoint}-2 { width: ( 2 * 0.0833333333 * 100%); }
+    .t-col-#{$breakpoint}-3 { width: ( 3 * 0.0833333333 * 100%); }
+    .t-col-#{$breakpoint}-4 { width: ( 4 * 0.0833333333 * 100%); }
+    .t-col-#{$breakpoint}-5 { width: ( 5 * 0.0833333333 * 100%); }
+    .t-col-#{$breakpoint}-6 { width: ( 6 * 0.0833333333 * 100%); }
+    .t-col-#{$breakpoint}-7 { width: ( 7 * 0.0833333333 * 100%); }
+    .t-col-#{$breakpoint}-8 { width: ( 8 * 0.0833333333 * 100%); }
+    .t-col-#{$breakpoint}-9 { width: ( 9 * 0.0833333333 * 100%); }
+    .t-col-#{$breakpoint}-10 { width: ( 10 * 0.0833333333 * 100%); }
+    .t-col-#{$breakpoint}-11 { width: ( 11 * 0.0833333333 * 100%); }
+    .t-col-#{$breakpoint}-12 { width: 100%; }
+  }
+}

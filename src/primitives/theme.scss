@@ -1,0 +1,48 @@
+$USER_PREFIX: 'u-';
+$THEME_PREFIX: 't-';
+$USER_THEME_PREFIX: 'ut-';
+
+// build default
+@mixin default() {
+  :root {
+    @each $key, $value in $default {
+      --#{$THEME_PREFIX}#{$key}: #{$value};
+    }
+  }
+}
+
+// build body
+@mixin body() {
+  :root {
+    @each $key, $value in $body {
+      --#{$THEME_PREFIX}#{$key}: var(--#{$USER_PREFIX}#{$key}), #{$value};
+    }
+  }
+}
+
+// build colors
+@mixin colors() {
+  :root {
+    @each $theme, $map in $colors {
+      @each $key, $value in $map {
+        --#{$THEME_PREFIX}#{$key}: var(--#{$USER_PREFIX}#{$key}, var(--#{$USER_THEME_PREFIX}#{$key}, #{$value}));
+      }
+    }
+  }
+}
+
+// build typography
+@mixin typography() {
+  :root {
+    @each $token, $map in $typography {
+      @each $key, $value in $map {
+        --#{$THEME_PREFIX}#{$token}-#{$key}: var(--#{$USER_THEME_PREFIX}#{$token}-#{$key}, #{$value});
+      }
+    }
+  }
+}
+
+@include default();
+@include body();
+@include colors();
+@include typography();

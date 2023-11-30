@@ -1,0 +1,24 @@
+#!/bin/bash
+set -e
+
+function log() {
+  echo "$@" 1>&2
+}
+
+function warn() {
+  echo "$@" 1>&2
+}
+
+pkg="@avotap/css"
+path="dist/stats/avotap.json"
+cp "tmp/node_modules/@avotap/css/dist/stats/avotap.json" before.json
+
+cp $path after.json
+
+key=".selectors.values[]"
+jq -r $key before.json | sort | uniq > before.txt
+jq -r $key after.json | sort | uniq > after.txt
+
+diff -U 1 {before,after}.txt
+
+rm {before,after}.{json,txt}

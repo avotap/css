@@ -1,0 +1,45 @@
+// Margin spacer utilities
+// stylelint-disable comment-empty-line-before
+
+// Loop through the spacer values
+@each $scale, $size in $spacer-map-rem-extended {
+  /* Set a $size margin on the top at $breakpoint */
+  .mt-#{$scale} {
+    margin-top: $size !important;
+  }
+  /* Set a $size margin on the bottom at $breakpoint */
+  .mb-#{$scale} {
+    margin-bottom: $size !important;
+  }
+
+  @if ($scale < length($spacer-map-rem)) {
+    /* Set a $size margin on the right at $breakpoint */
+    .mr-#{$scale} {
+      margin-right: $size !important;
+    }
+    /* Set a $size margin on the left at $breakpoint */
+    .ml-#{$scale} {
+      margin-left: $size !important;
+    }
+  }
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.mt-auto {
+  margin-top: auto !important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}
+
+.mb-auto {
+  margin-bottom: auto !important;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}

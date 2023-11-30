@@ -1,0 +1,100 @@
+{
+  "name": "@avotap/css",
+  "version": "0.0.1",
+  "description": "The CSS implementation of Avotap's Design System",
+  "homepage": "https://avotap.com/css",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "license": "MIT",
+  "style": "dist/avotap.css",
+  "sass": "index.scss",
+  "type": "module",
+  "main": "dist/avotap.js",
+  "author": "https://github.com/avotap",
+  "repository": "https://github.com/avotap/css",
+  "bugs": {
+    "url": "https://github.com/avotap/css/issues"
+  },
+  "keywords": [
+    "avotap",
+    "css",
+    "design-system"
+  ],
+  "scripts": {
+    "build:css": "script/build-css.js",
+    "dist": "script/dist.js",
+    "dist:watch": "chokidar \"src/**/*.scss\" -c \"script/dist.js\"",
+    "dist:css:watch": "chokidar \"src/**/*.scss\" -c \"script/build-css.js\"",
+    "stylelint": "stylelint --quiet --rd 'src/**/*.scss'",
+    "stylelint:fix": "npm run stylelint -- --fix",
+    "stylelint:remove-disables": "script/stylelint-remove-disables.js 'src/**/*.scss'",
+    "stylelint:add-disables": "script/stylelint-add-disables.js 'src/**/*.scss'",
+    "eslint": "eslint deprecations.js __tests__ script",
+    "prepublishOnly": "script/prepublish",
+    "pretest": "npm run dist && script/pretest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@csstools/postcss-sass": "^5.0.1",
+    "autoprefixer": "^10.4.13",
+    "chokidar-cli": "^3.0.0",
+    "cssstats": "^4.0.5",
+    "eslint": "^8.37.0",
+    "eslint-plugin-jest": "^27.2.2",
+    "eslint-plugin-prettier": "^5.0.1",
+    "filesize": "^10.0.5",
+    "front-matter": "^4.0.2",
+    "fs-extra": "^11.1.0",
+    "globby": "^13.1.4",
+    "jest": "^29.5.0",
+    "js-yaml": "^4.1.0",
+    "postcss": "^8.4.5",
+    "postcss-calc": "^8.2.4",
+    "postcss-custom-properties-fallback": "^1.0.2",
+    "postcss-import": "^15.0.0",
+    "postcss-load-config": "^4.0.1",
+    "postcss-scss": "^4.0.5",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "^2.8.8",
+    "semver": "^7.3.8",
+    "stylelint": "^15.7.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-no-unsupported-browser-features": "^7.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.3.1",
+    "table": "^6.8.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/utils/"
+    ],
+    "transform": {}
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 4 Firefox versions",
+    "last 3 Safari versions",
+    "not Safari 12",
+    "last 4 Edge versions",
+    "not Edge <= 18",
+    "Firefox ESR"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:github/internal",
+      "plugin:github/recommended"
+    ],
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2017,
+      "requireConfigFile": false
+    }
+  }
+}

@@ -1,0 +1,16 @@
+// Typography variables
+
+// Font sizes
+$font-size-small: 0.75rem !default;
+$font-size-normal: 1rem !default;
+
+// Font weights
+$font-weight-bold: var(--t-body-font-weight-bold) !default;
+$font-weight-normal: var(--t-body-font-weight) !default;
+
+// Font stacks
+$body-font: var(--t-font-stack) !default;
+
+// Monospace font stack
+$mono-font: var(--t-font-stack-mono) !default;
+

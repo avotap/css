@@ -1,0 +1,38 @@
+// Padding spacer utilities
+// stylelint-disable comment-empty-line-before
+
+// Padding spacer utilities
+@each $scale, $size in $spacer-map-rem-extended {
+  /* Set a $size padding on the top at $breakpoint */
+  .pt-#{$scale} {
+    padding-top: $size !important;
+  }
+  /* Set a $size padding on the bottom at $breakpoint */
+  .pb-#{$scale} {
+    padding-bottom: $size !important;
+  }
+
+  @if ($scale < length($spacer-map-rem)) {
+    /* Set a $size padding on the right at $breakpoint */
+    .pr-#{$scale} {
+      padding-right: $size !important;
+    }
+    /* Set a $size padding on the left at $breakpoint */
+    .pl-#{$scale} {
+      padding-left: $size !important;
+    }
+  }
+}
+
+// Responsive paddings for sections
+@each $breakpoint, $variant in $responsive-variants {
+  @include breakpoint($breakpoint) {
+    // Loop through the spacer values
+    @each $scale, $size in $spacer-map-rem-extra {
+      /* Set a $size padding on the top at $breakpoint */
+      .t-pt#{$variant}-#{$scale} { padding-top: $size !important; }
+      /* Set a $size padding on the bottom at $breakpoint */
+      .t-pb#{$variant}-#{$scale} { padding-bottom: $size !important; }
+    }
+  }
+}

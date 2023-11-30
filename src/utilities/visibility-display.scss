@@ -1,0 +1,19 @@
+// Visibility and display utilities
+
+// Hide utilities for each breakpoint
+// Each hide utility only applies to one breakpoint range.
+@media (max-width: $width-sm - 0.02px) {
+  .t-hide-sm { display: none !important; }
+}
+
+@media (min-width: $width-sm) and (max-width: $width-md - 0.02px) {
+  .t-hide-md { display: none !important; }
+}
+
+@media (min-width: $width-md) and (max-width: $width-lg - 0.02px) {
+  .t-hide-lg { display: none !important; }
+}
+
+@media (min-width: $width-lg) {
+  .t-hide-xl { display: none !important; }
+}

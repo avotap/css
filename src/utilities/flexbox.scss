@@ -1,0 +1,64 @@
+// Flex utility classes
+@each $breakpoint, $variant in $responsive-variants {
+  @include breakpoint($breakpoint) {
+    // Flexbox classes
+    // Container
+    .flex#{$variant} {
+      display: flex !important;
+    }
+    .flex#{$variant}-row {
+      flex-direction: row !important;
+    }
+    .flex#{$variant}-row-reverse {
+      flex-direction: row-reverse !important;
+    }
+    .flex#{$variant}-column {
+      flex-direction: column !important;
+    }
+    .flex#{$variant}-column-reverse {
+      flex-direction: column-reverse !important;
+    }
+
+    .flex#{$variant}-wrap {
+      flex-wrap: wrap !important;
+    }
+    .flex#{$variant}-nowrap {
+      flex-wrap: nowrap !important;
+    }
+    .flex#{$variant}-wrap-reverse {
+      flex-wrap: wrap-reverse !important;
+    }
+
+    .justify#{$variant}-start {
+      justify-content: flex-start !important;
+    }
+    .justify#{$variant}-end {
+      justify-content: flex-end !important;
+    }
+    .justify#{$variant}-center {
+      justify-content: center !important;
+    }
+    .justify#{$variant}-between {
+      justify-content: space-between !important;
+    }
+    .justify#{$variant}-around {
+      justify-content: space-around !important;
+    }
+
+    .items#{$variant}-start {
+      align-items: flex-start !important;
+    }
+    .items#{$variant}-end {
+      align-items: flex-end !important;
+    }
+    .items#{$variant}-center {
+      align-items: center !important;
+    }
+    .items#{$variant}-baseline {
+      align-items: baseline !important;
+    }
+    .items#{$variant}-stretch {
+      align-items: stretch !important;
+    }
+  }
+}
