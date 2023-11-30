@@ -1,6 +1,6 @@
 {
   "name": "@avotap/css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The CSS implementation of Avotap's Design System",
   "homepage": "https://avotap.com/css",
   "engines": {
@@ -37,6 +37,7 @@
     "release": "changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@csstools/postcss-sass": "^5.0.1",
     "autoprefixer": "^10.4.13",
     "chokidar-cli": "^3.0.0",
