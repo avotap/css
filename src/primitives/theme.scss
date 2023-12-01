@@ -15,7 +15,7 @@ $USER_THEME_PREFIX: 'ut-';
 @mixin body() {
   :root {
     @each $key, $value in $body {
-      --#{$THEME_PREFIX}#{$key}: var(--#{$USER_PREFIX}#{$key}), #{$value};
+      --#{$THEME_PREFIX}body-#{$key}: var(--#{$USER_PREFIX}#{$key}, #{$value});
     }
   }
 }
@@ -23,9 +23,19 @@ $USER_THEME_PREFIX: 'ut-';
 // build colors
 @mixin colors() {
   :root {
-    @each $theme, $map in $colors {
+    @each $token, $map in $colors {
       @each $key, $value in $map {
-        --#{$THEME_PREFIX}#{$key}: var(--#{$USER_PREFIX}#{$key}, var(--#{$USER_THEME_PREFIX}#{$key}, #{$value}));
+        --#{$THEME_PREFIX}#{$token}-#{$key}: var(--#{$USER_PREFIX}#{$key}, var(--#{$USER_THEME_PREFIX}#{$key}, #{$value}));
+      }
+    }
+  }
+}
+
+@mixin elements() {
+  :root {
+    @each $token, $map in $elements {
+      @each $key, $value in $map {
+        --#{$THEME_PREFIX}#{$token}-#{$key}: var(--#{$USER_PREFIX}#{$key}, var(--#{$USER_THEME_PREFIX}#{$key}, #{$value}));
       }
     }
   }
@@ -45,4 +55,5 @@ $USER_THEME_PREFIX: 'ut-';
 @include default();
 @include body();
 @include colors();
+@include elements();
 @include typography();

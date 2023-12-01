@@ -13,7 +13,10 @@
   "type": "module",
   "main": "dist/avotap.js",
   "author": "https://github.com/avotap",
-  "repository": "https://github.com/avotap/css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avotap/css.git"
+  },
   "bugs": {
     "url": "https://github.com/avotap/css/issues"
   },

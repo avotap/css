@@ -1,0 +1,43 @@
+// stylelint-disable selector-max-type, no-duplicate-selectors
+
+// Base button styles
+.t-btn {
+  position: relative;
+  display: inline-block;
+  padding: var(--t-btn-padding);
+  font-size: var(--t-btn-font-size);
+  font-weight: var(--t-btn-font-weight);
+  // stylelint-disable-next-line primer/typography
+  line-height: 20px; // Specifically not inherit our `<body>` default
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid;
+  border-radius: var(--t-btn-border-radius);
+  appearance: none; // Corrects inability to style clickable `input` types in iOS.
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:disabled,
+  &.disabled,
+  &[aria-disabled='true'] {
+    cursor: default;
+  }
+
+  i {
+    font-style: normal;
+    opacity: 0.75;
+  }
+}
+
+// Default button
+
+.t-btn {
+  color: var(--t-btn-color);
+  background-color: var(--t-btn-bg);
+  transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+  transition-property: color, background-color, opacity, box-shadow, border-color;
+}

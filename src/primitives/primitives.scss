@@ -1,168 +1,170 @@
 $default: (
   // default font stack
-  font-stack:
-    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'",
+  font-stack: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'",
   // mono font stack
   // Note: SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome
   font-stack-mono: 'ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace'
 );
 
-$colors: (
-  fg: (
-    fg-default: #1f2328,
-    fg-muted: #656d76,
-    fg-subtle: #6e7781,
-    fg-on-emphasis: #fff,
-  ),
+$body: (
+  font-size: 18px,
+  line-height: 1.25,
+  font-family: var(--t-font-stack),
+  font-family-heading: var(--t-font-stack),
+  font-weight: 300,
+  font-weight-bold: 600,
+);
 
-  bg: (
-    bg-default: #fff,
-    bg-subtle: #f6f8fa,
-    bg-inset: #f6f8fa,
-    bg-overlay: #fff,
+$colors: (
+  fg: (default: #1f2328,
+    muted: #656d76,
+    subtle: #6e7781,
+    on-emphasis: #fff,
   ),
-  accent: (
-    accent-fg: #0969da,
-    accent-muted: #184982,
-    accent-on-hover: #1372de,
-    accent-emphasis: #0969da,
+  bg: (default: #fff,
+    subtle: #f6f8fa,
+    inset: #f6f8fa,
+    overlay: #fff,
   ),
-  border: (
-    border-default: #d0d7de,
-    border-muted: #d8dee4,
+  accent: (fg: #0969da,
+    muted: #184982,
+    on-hover: #1372de,
+    emphasis: #0969da,
+  ),
+  border: (default: #d0d7de,
+    muted: #d8dee4,
   ),
 );
 
-$body: (
-  body-font-size: 18px,
-  body-line-height: 1.25,
-  body-font-family: var(--font-stack-avotap),
-  body-font-family-heading: var(--font-stack-avotap),
-  body-font-weight: 300,
-  body-font-weight-bold: 600,
+$elements: (
+  btn: (padding:0.75rem 1.25rem,
+    font-size: 0.75rem,
+    font-weight: var(--t-body-font-weight-bold),
+    line-height: 1.5,
+    border-color: transparent,
+    border-radius: 0.25rem,
+    color: var(--t-fg-default),
+    bg: transparent,
+  ),
 );
 
 $typography: (
-  title: (
-    font-family: var(--t-body-font-family-heading),
+  title: (font-family: var(--t-body-font-family-heading),
     font-weight: var(--t-body-font-weight-bold),
     line-height: 1.22,
     // t-title-2xs
     2xs-size: 2rem,
-    2xs-size-on-lg: 1.777rem,
-    2xs-size-on-md: 1.555rem,
+    2xs-size-tablet: 1.777rem,
+    2xs-size-mobile: 1.555rem,
     // t-title-xs
     xs-size: 2.333rem,
-    xs-size-on-lg: 2.111rem,
-    xs-size-on-md: 1.666rem,
+    xs-size-tablet: 2.111rem,
+    xs-size-mobile: 1.666rem,
     // t-title-sm
     sm-size: 2.666rem,
-    sm-size-on-lg: 2.444rem,
-    sm-size-on-md: 1.666rem,
+    sm-size-tablet: 2.444rem,
+    sm-size-mobile: 1.666rem,
     // t-title-md
     md-size: 2.888rem,
-    md-size-on-lg: 2.666rem,
-    md-size-on-md: 1.666rem,
+    md-size-tablet: 2.666rem,
+    md-size-mobile: 1.666rem,
     // t-title-lg
     lg-size: 3.555rem,
-    lg-size-on-lg: 3.333rem,
-    lg-size-on-md: 1.666rem,
+    lg-size-tablet: 3.333rem,
+    lg-size-mobile: 1.666rem,
     // t-title-xl
     xl-size: 4rem,
-    xl-size-on-lg: 3.777rem,
-    xl-size-on-md: 1.777rem,
+    xl-size-tablet: 3.777rem,
+    xl-size-mobile: 1.777rem,
     xl-size-on-sm: 1.666rem,
     // t-title-2xl
     2xl-size: 4.555rem,
-    2xl-size-on-lg: 4.333rem,
-    2xl-size-on-md: 2rem,
+    2xl-size-tablet: 4.333rem,
+    2xl-size-mobile: 2rem,
     2xl-size-on-sm: 1.666rem,
     // t-title-3xl
     3xl-size: 5.555rem,
-    3xl-size-on-lg: 4.333rem,
-    3xl-size-on-md: 2rem,
+    3xl-size-tablet: 4.333rem,
+    3xl-size-mobile: 2rem,
     3xl-size-on-sm: 1.666rem,
     // t-title-4xl
     4xl-size: 7.222rem,
-    4xl-size-on-lg: 4.333rem,
-    4xl-size-on-md: 2rem,
+    4xl-size-tablet: 4.333rem,
+    4xl-size-mobile: 2rem,
     4xl-size-on-sm: 1.666rem,
   ),
-  utitle: (
-    font-family: var(--t-body-font-family),
+  utitle: (font-family: var(--t-body-font-family),
     font-weight: var(--t-body-font-weight-bold),
     letter-spacing: 2.5px,
     // t-utitle-xs
     xs-size: 0.666rem,
-    xs-size-on-lg: 0.666rem,
-    xs-size-on-md: 0.555rem,
+    xs-size-tablet: 0.666rem,
+    xs-size-mobile: 0.555rem,
     // t-utitle-sm
     sm-size: 0.777rem,
-    sm-size-on-lg: 0.777rem,
-    sm-size-on-md: 0.555rem,
+    sm-size-tablet: 0.777rem,
+    sm-size-mobile: 0.555rem,
     // t-utitle-md
     md-size: 0.888rem,
-    md-size-on-lg: 0.777rem,
-    md-size-on-md: 0.666rem,
+    md-size-tablet: 0.777rem,
+    md-size-mobile: 0.666rem,
     // t-utitle-lg
     lg-size: 1rem,
-    lg-size-on-lg: 0.888rem,
-    lg-size-on-md: 0.777rem,
+    lg-size-tablet: 0.888rem,
+    lg-size-mobile: 0.777rem,
   ),
-  descr: (
-    font-weight: var(--t-body-font-weight),
+  descr: (font-weight: var(--t-body-font-weight),
     line-height: 1.55,
     // t-descr-2xs
     2xs-size: 0.777rem,
-    2xs-size-on-lg: 0.666rem,
-    2xs-size-on-md: 0.666rem,
+    2xs-size-tablet: 0.666rem,
+    2xs-size-mobile: 0.666rem,
     // t-descr-xs
     xs-size: 0.888rem,
-    xs-size-on-lg: 0.777rem,
-    xs-size-on-md: 0.666rem,
+    xs-size-tablet: 0.777rem,
+    xs-size-mobile: 0.666rem,
     // t-descr-sm
     sm-size: 1rem,
-    sm-size-on-lg: 0.888rem,
-    sm-size-on-md: 0.777rem,
+    sm-size-tablet: 0.888rem,
+    sm-size-mobile: 0.777rem,
     // t-descr-md
     md-size: 1.111rem,
-    md-size-on-lg: 1rem,
-    md-size-on-md: 0.888rem,
+    md-size-tablet: 1rem,
+    md-size-mobile: 0.888rem,
     // t-descr-lg
     lg-size: 1.222rem,
-    lg-size-on-lg: 1.111rem,
-    lg-size-on-md: 1rem,
+    lg-size-tablet: 1.111rem,
+    lg-size-mobile: 1rem,
     // t-descr-xl
     xl-size: 1.333rem,
-    xl-size-on-lg: 1.222rem,
-    xl-size-on-md: 1.111rem,
+    xl-size-tablet: 1.222rem,
+    xl-size-mobile: 1.111rem,
     // t-descr-2xl
     2xl-size: 1.444rem,
-    2xl-size-on-lg: 1.222rem,
-    2xl-size-on-md: 1.111rem,
+    2xl-size-tablet: 1.222rem,
+    2xl-size-mobile: 1.111rem,
     // t-descr-3xl
     3xl-size: 1.666rem,
-    3xl-size-on-lg: 1.444rem,
-    3xl-size-on-md: 1.222rem,
+    3xl-size-tablet: 1.444rem,
+    3xl-size-mobile: 1.222rem,
   ),
-  text: (
-    line-height: 1.55,
-    line-height-on-md: 1.45,
+  text: (line-height: 1.55,
+    line-height-mobile: 1.45,
     // t-text-xs
     xs-size: 0.833rem,
-    xs-size-on-lg: 0.777rem,
-    xs-size-on-md: 0.666rem,
+    xs-size-tablet: 0.777rem,
+    xs-size-mobile: 0.666rem,
     // t-text-sm
     sm-size: 1rem,
-    sm-size-on-lg: 0.888rem,
-    sm-size-on-md: 0.777rem,
+    sm-size-tablet: 0.888rem,
+    sm-size-mobile: 0.777rem,
     // t-text-md
     md-size: 1.111rem,
-    md-size-on-lg: 1rem,
-    md-size-on-md: 0.888rem,
+    md-size-tablet: 1rem,
+    md-size-mobile: 0.888rem,
     // t-text-lg
     lg-size: 1.222rem,
-    lg-size-on-lg: 1.111rem,
-    lg-size-on-md: 1rem,
+    lg-size-tablet: 1.111rem,
+    lg-size-mobile: 1rem,
   ),
 );

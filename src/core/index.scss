@@ -12,8 +12,9 @@
 
 // Core modules
 @import '../base/index.scss';
+@import '../buttons/index.scss';
+@import '../covers/index.scss';
 @import '../layout/index.scss';
-
 
 // Utilities always go last so that they can override components
 @import '../utilities/index.scss';
