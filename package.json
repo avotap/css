@@ -6,6 +6,7 @@
   "engines": {
     "node": ">=16.0.0"
   },
+  "private": false,
   "license": "MIT",
   "style": "dist/avotap.css",
   "sass": "index.scss",
@@ -15,6 +16,10 @@
   "repository": "https://github.com/avotap/css",
   "bugs": {
     "url": "https://github.com/avotap/css/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "avotap",
