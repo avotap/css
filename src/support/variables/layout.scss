@@ -59,10 +59,7 @@ $spacers-large-rem: (
   20: 5rem,
 ) !default;
 
-$spacer-map-rem-extended: map-merge(
-  $spacer-map-rem,
-  $spacers-large-rem
-) !default;
+$spacer-map-rem-extended: map-merge($spacer-map-rem, $spacers-large-rem) !default;
 
 // extra rem units (px: base rem)
 

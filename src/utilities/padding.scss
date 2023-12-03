@@ -30,9 +30,13 @@
     // Loop through the spacer values
     @each $scale, $size in $spacer-map-rem-extra {
       /* Set a $size padding on the top at $breakpoint */
-      .t-pt#{$variant}-#{$scale} { padding-top: $size !important; }
+      .t-pt#{$variant}-#{$scale} {
+        padding-top: $size !important;
+      }
       /* Set a $size padding on the bottom at $breakpoint */
-      .t-pb#{$variant}-#{$scale} { padding-bottom: $size !important; }
+      .t-pb#{$variant}-#{$scale} {
+        padding-bottom: $size !important;
+      }
     }
   }
 }

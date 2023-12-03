@@ -25,7 +25,10 @@ $USER_THEME_PREFIX: 'ut-';
   :root {
     @each $token, $map in $colors {
       @each $key, $value in $map {
-        --#{$THEME_PREFIX}#{$token}-#{$key}: var(--#{$USER_PREFIX}#{$key}, var(--#{$USER_THEME_PREFIX}#{$key}, #{$value}));
+        --#{$THEME_PREFIX}#{$token}-#{$key}: var(
+          --#{$USER_PREFIX}#{$key},
+          var(--#{$USER_THEME_PREFIX}#{$key}, #{$value})
+        );
       }
     }
   }
@@ -35,7 +38,10 @@ $USER_THEME_PREFIX: 'ut-';
   :root {
     @each $token, $map in $elements {
       @each $key, $value in $map {
-        --#{$THEME_PREFIX}#{$token}-#{$key}: var(--#{$USER_PREFIX}#{$key}, var(--#{$USER_THEME_PREFIX}#{$key}, #{$value}));
+        --#{$THEME_PREFIX}#{$token}-#{$key}: var(
+          --#{$USER_PREFIX}#{$key},
+          var(--#{$USER_THEME_PREFIX}#{$key}, #{$value})
+        );
       }
     }
   }

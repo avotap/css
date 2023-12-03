@@ -7,7 +7,6 @@
   padding: var(--t-btn-padding);
   font-size: var(--t-btn-font-size);
   font-weight: var(--t-btn-font-weight);
-  // stylelint-disable-next-line primer/typography
   line-height: 20px; // Specifically not inherit our `<body>` default
   white-space: nowrap;
   vertical-align: middle;

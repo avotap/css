@@ -34,13 +34,21 @@
 // Text styles
 
 /* Make text uppercase */
-.text-uppercase { text-transform: uppercase !important; }
+.text-uppercase {
+  text-transform: uppercase !important;
+}
 
 /* Underline text */
-.text-underline { text-decoration: underline !important; }
+.text-underline {
+  text-decoration: underline !important;
+}
 
 /* Don't underline text */
-.no-underline { text-decoration: none !important; }
+.no-underline {
+  text-decoration: none !important;
+}
 
 /* Make text capitalized (transforms first character to uppercase) */
-.text-capitalize { text-transform: capitalize !important; }
+.text-capitalize {
+  text-transform: capitalize !important;
+}

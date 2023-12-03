@@ -1,6 +1,7 @@
 $default: (
   // default font stack
-  font-stack: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'",
+  font-stack:
+    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'",
   // mono font stack
   // Note: SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome
   font-stack-mono: 'ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace'
@@ -16,28 +17,33 @@ $body: (
 );
 
 $colors: (
-  fg: (default: #1f2328,
+  fg: (
+    default: #1f2328,
     muted: #656d76,
     subtle: #6e7781,
     on-emphasis: #fff,
   ),
-  bg: (default: #fff,
+  bg: (
+    default: #fff,
     subtle: #f6f8fa,
     inset: #f6f8fa,
     overlay: #fff,
   ),
-  accent: (fg: #0969da,
+  accent: (
+    fg: #0969da,
     muted: #184982,
     on-hover: #1372de,
     emphasis: #0969da,
   ),
-  border: (default: #d0d7de,
+  border: (
+    default: #d0d7de,
     muted: #d8dee4,
   ),
 );
 
 $elements: (
-  btn: (padding:0.75rem 1.25rem,
+  btn: (
+    padding: 0.75rem 1.25rem,
     font-size: 0.75rem,
     font-weight: var(--t-body-font-weight-bold),
     line-height: 1.5,
@@ -49,7 +55,8 @@ $elements: (
 );
 
 $typography: (
-  utitle: (font-family: var(--t-body-font-family),
+  utitle: (
+    font-family: var(--t-body-font-family),
     font-weight: var(--t-body-font-weight-bold),
     letter-spacing: 2.5px,
     // t-utitle-xs
@@ -69,7 +76,8 @@ $typography: (
     lg-size-desktop: 0.888rem,
     lg-size-mobile: 0.777rem,
   ),
-  title: (font-family: var(--t-body-font-family-heading),
+  title: (
+    font-family: var(--t-body-font-family-heading),
     font-weight: var(--t-body-font-weight-bold),
     line-height: 1.22,
     // t-title-2xs
@@ -113,7 +121,8 @@ $typography: (
     4xl-size-tablet: 2rem,
     4xl-size-mobile: 1.666rem,
   ),
-  descr: (font-weight: var(--t-body-font-weight),
+  descr: (
+    font-weight: var(--t-body-font-weight),
     line-height: 1.55,
     // t-descr-2xs
     2xs-size: 0.777rem,
@@ -148,7 +157,8 @@ $typography: (
     3xl-size-desktop: 1.444rem,
     3xl-size-mobile: 1.222rem,
   ),
-  text: (line-height: 1.55,
+  text: (
+    line-height: 1.55,
     line-height-mobile: 1.45,
     // t-text-xs
     xs-size: 0.833rem,
