@@ -7,6 +7,12 @@
 <p align="center">The CSS implementation of Avotap's Design System</p>
 
 <p align="center">
+  <a aria-label="npm package" href="https://www.npmjs.com/package/@avotap/css">
+    <img alt="" src="https://img.shields.io/npm/v/@avotap/css.svg">
+  </a>
+  <a aria-label="build status" href="https://github.com/avotap/css/actions/workflows/ci.yml">
+    <img alt="" src="https://github.com/avotap/css/actions/workflows/ci.yml/badge.svg">
+  </a>
   <a aria-label="last commit" href="https://github.com/avotap/css/commits/main">
     <img alt="" src="https://img.shields.io/github/last-commit/avotap/css.svg">
   </a>
@@ -16,6 +22,10 @@
 </p>
 
 ## Documentation
+
+Under development.
+
+## Usage
 
 Under development.
 
