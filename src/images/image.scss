@@ -1,0 +1,14 @@
+// Base image
+.t-img {
+  width: 100%;
+  max-width: 100%;
+}
+
+// Base auto image
+.t-img-auto {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}

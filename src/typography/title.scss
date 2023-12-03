@@ -1,0 +1,136 @@
+[class~='t-title'],
+[class*='t-title-'] {
+  font-family: var(--t-title-font-family);
+  font-weight: var(--t-title-font-weight);
+  line-height: var(--t-title-line-height);
+}
+
+.t-title-2xs {
+  font-size: var(--t-title-2xs-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-title-2xs-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-title-2xs-size);
+  }
+}
+
+.t-title-xs {
+  font-size: var(--t-title-xs-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-title-xs-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-title-xs-size);
+  }
+}
+
+.t-title-sm {
+  font-size: var(--t-title-sm-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-title-sm-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-title-sm-size);
+  }
+}
+
+.t-title-md {
+  font-size: var(--t-title-md-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-title-md-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-title-md-size);
+  }
+}
+
+.t-title-lg {
+  font-size: var(--t-title-lg-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-title-lg-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-title-lg-size);
+  }
+}
+
+.t-title-xl {
+  font-size: var(--t-title-xl-size-mobile);
+  line-height: calc(var(--t-title-line-height) - 0.05);
+
+  @include breakpoint(sm) {
+    font-size: var(--t-title-xl-size-tablet);
+  }
+
+  @include breakpoint(md) {
+    font-size: var(--t-title-xl-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-title-xl-size);
+  }
+}
+
+.t-title-2xl {
+  font-size: var(--t-title-2xl-size-mobile);
+  line-height: calc(var(--t-title-line-height) - 0.05);
+
+  @include breakpoint(sm) {
+    font-size: var(--t-title-2xl-size-tablet);
+  }
+
+  @include breakpoint(md) {
+    font-size: var(--t-title-2xl-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-title-2xl-size);
+  }
+}
+
+.t-title-3xl {
+  font-size: var(--t-title-3xl-size-mobile);
+  line-height: calc(var(--t-title-line-height) - 0.22);
+
+  @include breakpoint(sm) {
+    font-size: var(--t-title-3xl-size-tablet);
+  }
+
+  @include breakpoint(md) {
+    font-size: var(--t-title-3xl-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-title-3xl-size);
+    line-height: var(--t-title-line-height);
+  }
+}
+
+.t-title-4xl {
+  font-size: var(--t-title-4xl-size-mobile);
+  line-height: calc(var(--t-title-line-height) - 0.22);
+
+  @include breakpoint(sm) {
+    font-size: var(--t-title-4xl-size-tablet);
+  }
+
+  @include breakpoint(md) {
+    font-size: var(--t-title-4xl-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-title-4xl-size);
+    line-height: var(--t-title-line-height);
+  }
+}

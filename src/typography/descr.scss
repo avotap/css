@@ -1,0 +1,101 @@
+[class~='t-descr'],
+[class*='t-descr-'] {
+  font-weight: var(--t-descr-font-weight);
+  line-height: var(--t-descr-line-height);
+}
+
+.t-descr-2xs {
+  font-size: var(--t-descr-2xs-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-descr-2xs-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-descr-2xs-size);
+  }
+}
+
+.t-descr-xs {
+  font-size: var(--t-descr-xs-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-descr-xs-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-descr-xs-size);
+  }
+}
+
+.t-descr-sm {
+  font-size: var(--t-descr-sm-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-descr-sm-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-descr-sm-size);
+  }
+}
+
+.t-descr-md {
+  font-size: var(--t-descr-md-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-descr-md-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-descr-md-size);
+  }
+}
+
+.t-descr-lg {
+  font-size: var(--t-descr-lg-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-descr-lg-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-descr-2xs-size);
+  }
+}
+
+.t-descr-xl {
+  font-size: var(--t-descr-xl-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-descr-xl-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-descr-xl-size);
+  }
+}
+
+.t-descr-2xl {
+  font-size: var(--t-descr-2xl-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-descr-2xl-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-descr-2xl-size);
+  }
+}
+
+.t-descr-3xl {
+  font-size: var(--t-descr-3xl-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-descr-3xl-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-descr-3xl-size);
+  }
+}

@@ -1,0 +1,54 @@
+[class~='t-utitle'],
+[class*='t-utitle-'] {
+  font-family: var(--t-utitle-font-family);
+  font-weight: var(--t-utitle-font-weight);
+  letter-spacing: var(--t-utitle-letter-spacing);
+}
+
+.t-utitle-xs {
+  font-size: var(--t-utitle-xs-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-utitle-xs-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-utitle-xs-size);
+  }
+}
+
+.t-utitle-sm {
+  font-size: var(--t-utitle-sm-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-utitle-sm-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-utitle-sm-size);
+  }
+}
+
+.t-utitle-md {
+  font-size: var(--t-utitle-md-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-utitle-md-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-utitle-md-size);
+  }
+}
+
+.t-utitle-lg {
+  font-size: var(--t-utitle-lg-size-mobile);
+
+  @include breakpoint(md) {
+    font-size: var(--t-utitle-lg-size-desktop);
+  }
+
+  @include breakpoint(xl) {
+    font-size: var(--t-utitle-lg-size);
+  }
+}

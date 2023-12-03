@@ -30,10 +30,10 @@ $breakpoints: (
 // loop:
 $responsive-variants: (
   '': '',
-  sm: '-sm',
-  // md: '-md', // disabled by default
-  lg: '-lg',
-  // xl: '-xl', // disabled by default
+  // sm: '-sm',
+  md: '-md',
+  // lg: '-lg',
+  xl: '-xl',
 ) !default;
 
 // rem unit support
@@ -53,11 +53,10 @@ $spacers-large-rem: (
   8: 2rem,
   9: 2.25rem,
   10: 2.5rem,
-  //
   12: 3rem,
-  14: 4rem,
-  16: 5rem,
-  18: 6rem,
+  14: 3.5rem,
+  16: 4rem,
+  20: 5rem,
 ) !default;
 
 $spacer-map-rem-extended: map-merge(
