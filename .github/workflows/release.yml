@@ -5,6 +5,9 @@ on:
       - main
 jobs:
   release:
+    name: Final
+    if: ${{ github.repository == 'avotap/css' }}
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

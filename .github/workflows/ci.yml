@@ -1,0 +1,51 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+jobs:
+  stylelint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run dist
+      - name: Lint source files
+        run: npx stylelint --fix
+      - name: Look for unused stylelint:disable lines
+        run: npm run stylelint -- --report-needless-disables
+      - name: Push up any fixes
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Fixing stylelint issues
+          file_pattern: src/**/*.scss
+
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+      - run: npm ci
+      - name: Lint workflow files
+        run: npm run eslint
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+      - run: npm ci
+      - name: Jest
+        run: npm test

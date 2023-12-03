@@ -1,4 +1,7 @@
 {
+  "selectors": {},
+  "variables": {},
+
   "mixins": {
     "rem": null
   }
