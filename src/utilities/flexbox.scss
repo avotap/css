@@ -12,10 +12,10 @@
     .flex#{$variant}-row-reverse {
       flex-direction: row-reverse !important;
     }
-    .flex#{$variant}-column {
+    .flex#{$variant}-col {
       flex-direction: column !important;
     }
-    .flex#{$variant}-column-reverse {
+    .flex#{$variant}-col-reverse {
       flex-direction: column-reverse !important;
     }
 

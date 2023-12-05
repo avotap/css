@@ -1,0 +1,21 @@
+// Need to target base styles
+// stylelint-disable selector-no-qualifying-type
+// stylelint-disable selector-max-type
+.markdown-body {
+  // Images
+  img {
+    max-width: 100%;
+    // because we put padding on the images to hide header lines, and some people
+    // specify the width of their images in their markdown.
+    box-sizing: content-box;
+    background-color: var(--t-bg-default);
+
+    &[align='right'] {
+      padding-left: 20px;
+    }
+
+    &[align='left'] {
+      padding-right: 20px;
+    }
+  }
+}
