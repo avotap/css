@@ -1,0 +1,14 @@
+// Gap spacer utilities
+// stylelint-disable comment-empty-line-before
+
+// Loop through the spacer values
+@each $scale, $size in $spacer-map-rem {
+  /* Set a $size margin on the top at $breakpoint */
+  .gap-col-#{$scale} {
+    column-gap: $size !important;
+  }
+  /* Set a $size margin on the bottom at $breakpoint */
+  .gap-row-#{$scale} {
+    row-gap: $size !important;
+  }
+}

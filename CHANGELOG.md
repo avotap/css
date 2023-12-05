@@ -5,7 +5,7 @@
 ### Patch Changes
 
 - e2fdea0: added markdown
-- 5263d11: addded typography & images
+- 5263d11: added typography & images
 - a094356: added more rules for prettier; prettier automation
 - 5263d11: updated primitives
 
