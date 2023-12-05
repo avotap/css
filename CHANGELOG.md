@@ -1,5 +1,14 @@
 # @avotap/css
 
+## 0.0.4
+
+### Patch Changes
+
+- e2fdea0: added markdown
+- 5263d11: addded typography & images
+- a094356: added more rules for prettier; prettier automation
+- 5263d11: updated primitives
+
 ## 0.0.3
 
 ### Patch Changes
