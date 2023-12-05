@@ -1,6 +1,6 @@
 {
   "name": "@avotap/css",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The CSS implementation of Avotap's Design System",
   "homepage": "https://avotap.com/css",
   "engines": {
