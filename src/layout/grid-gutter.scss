@@ -1,0 +1,13 @@
+// Optional gutter options to work with grid.scss
+
+// Gutter Columns
+
+// Loop through the spacer values
+@each $scale, $size in $spacer-map-rem-extended {
+  .gx-#{$scale} {
+    --bs-gutter-x: #{$size};
+  }
+  .gy-#{$scale} {
+    --bs-gutter-y: #{$size};
+  }
+}
