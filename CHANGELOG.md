@@ -1,5 +1,16 @@
 # @avotap/css
 
+## 0.1.0
+
+### Minor Changes
+
+- 6e29532: added grid gutters
+
+### Patch Changes
+
+- 1e5eac3: added gaps (col & row)
+- 6e29532: fixed grid breakpoint variants
+
 ## 0.0.4
 
 ### Patch Changes
