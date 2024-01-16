@@ -2,10 +2,6 @@
 @each $breakpoint, $variant in $responsive-variants {
   @include breakpoint($breakpoint) {
     // Flexbox classes
-    // Container
-    .flex#{$variant} {
-      display: flex !important;
-    }
     .flex#{$variant}-row {
       flex-direction: row !important;
     }

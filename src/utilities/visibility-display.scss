@@ -1,5 +1,28 @@
 // Visibility and display utilities
 
+// Responsive display utilities
+
+// these are values for the display CSS property
+$display-values: (block, flex, inline, inline-block, inline-flex, none, table, table-cell) !default;
+
+// loop each display
+@each $breakpoint, $variant in $responsive-variants {
+  @include breakpoint($breakpoint) {
+    @each $display in $display-values {
+      .#{$display}#{$variant} {
+        display: $display !important;
+      }
+    }
+  }
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+.visible {
+  visibility: visible !important;
+}
+
 // Hide utilities for each breakpoint
 // Each hide utility only applies to one breakpoint range.
 @media (max-width: $width-sm - 0.02px) {
