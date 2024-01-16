@@ -1,5 +1,14 @@
 # @avotap/css
 
+## 0.1.1
+
+### Patch Changes
+
+- 2e336c0: visibility-display improvements
+- c6238b0: changed markdown-body to md-body
+- c6238b0: typography variable improvements
+- bf73620: removed useless variables from primitives
+
 ## 0.1.0
 
 ### Minor Changes
