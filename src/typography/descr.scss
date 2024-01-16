@@ -1,101 +1,97 @@
 [class~='t-descr'],
 [class*='t-descr-'] {
-  font-weight: var(--t-descr-font-weight);
-  line-height: var(--t-descr-line-height);
+  font-weight: var(--t-body-font-weight);
+  line-height: 1.55;
 }
 
 .t-descr-2xs {
-  font-size: var(--t-descr-2xs-size-mobile);
-
-  @include breakpoint(md) {
-    font-size: var(--t-descr-2xs-size-desktop);
-  }
+  font-size: 0.666rem;
 
   @include breakpoint(xl) {
-    font-size: var(--t-descr-2xs-size);
+    font-size: 0.777rem;
   }
 }
 
 .t-descr-xs {
-  font-size: var(--t-descr-xs-size-mobile);
+  font-size: 0.666rem;
 
   @include breakpoint(md) {
-    font-size: var(--t-descr-xs-size-desktop);
+    font-size: 0.777rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-descr-xs-size);
+    font-size: 0.888rem;
   }
 }
 
 .t-descr-sm {
-  font-size: var(--t-descr-sm-size-mobile);
+  font-size: 0.777rem;
 
   @include breakpoint(md) {
-    font-size: var(--t-descr-sm-size-desktop);
+    font-size: 0.888rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-descr-sm-size);
+    font-size: 1rem;
   }
 }
 
 .t-descr-md {
-  font-size: var(--t-descr-md-size-mobile);
+  font-size: 0.888rem;
 
   @include breakpoint(md) {
-    font-size: var(--t-descr-md-size-desktop);
+    font-size: 1rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-descr-md-size);
+    font-size: 1.111rem;
   }
 }
 
 .t-descr-lg {
-  font-size: var(--t-descr-lg-size-mobile);
+  font-size: 1rem;
 
   @include breakpoint(md) {
-    font-size: var(--t-descr-lg-size-desktop);
+    font-size: 1.111rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-descr-lg-size);
+    font-size: 1.222rem;
   }
 }
 
 .t-descr-xl {
-  font-size: var(--t-descr-xl-size-mobile);
+  font-size: 1.111rem;
 
   @include breakpoint(md) {
-    font-size: var(--t-descr-xl-size-desktop);
+    font-size: 1.222rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-descr-xl-size);
+    font-size: 1.333rem;
   }
 }
 
 .t-descr-2xl {
-  font-size: var(--t-descr-2xl-size-mobile);
+  font-size: 1.111rem;
 
   @include breakpoint(md) {
-    font-size: var(--t-descr-2xl-size-desktop);
+    font-size: 1.222rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-descr-2xl-size);
+    font-size: 1.444rem;
   }
 }
 
 .t-descr-3xl {
-  font-size: var(--t-descr-3xl-size-mobile);
+  font-size: 1.222rem;
 
   @include breakpoint(md) {
-    font-size: var(--t-descr-3xl-size-desktop);
+    font-size: 1.444rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-descr-3xl-size);
+    font-size: 1.666rem;
   }
 }

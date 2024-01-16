@@ -33,31 +33,6 @@ $USER_PREFIX: 'u-';
   }
 }
 
-@mixin elements() {
-  :root,
-  .t-html {
-    @each $token, $map in $elements {
-      @each $key, $value in $map {
-        --#{$THEME_PREFIX}#{$token}-#{$key}: #{$value};
-      }
-    }
-  }
-}
-
-// build typography
-@mixin typography() {
-  :root,
-  .t-html {
-    @each $token, $map in $typography {
-      @each $key, $value in $map {
-        --#{$THEME_PREFIX}#{$token}-#{$key}: #{$value};
-      }
-    }
-  }
-}
-
 @include default();
 @include body();
 @include colors();
-@include elements();
-@include typography();

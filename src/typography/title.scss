@@ -1,136 +1,136 @@
 [class~='t-title'],
 [class*='t-title-'] {
-  font-family: var(--t-title-font-family);
-  font-weight: var(--t-title-font-weight);
-  line-height: var(--t-title-line-height);
+  font-family: var(--t-body-font-family-heading);
+  font-weight: var(--t-body-font-weight-bold);
+  line-height: 1.22;
 }
 
 .t-title-2xs {
-  font-size: var(--t-title-2xs-size-mobile);
+  font-size: 1.555rem;
 
   @include breakpoint(md) {
-    font-size: var(--t-title-2xs-size-desktop);
+    font-size: 1.777rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-title-2xs-size);
+    font-size: 2rem;
   }
 }
 
 .t-title-xs {
-  font-size: var(--t-title-xs-size-mobile);
+  font-size: 1.666rem;
 
   @include breakpoint(md) {
-    font-size: var(--t-title-xs-size-desktop);
+    font-size: 2.111rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-title-xs-size);
+    font-size: 2.333rem;
   }
 }
 
 .t-title-sm {
-  font-size: var(--t-title-sm-size-mobile);
+  font-size: 1.666rem;
 
   @include breakpoint(md) {
-    font-size: var(--t-title-sm-size-desktop);
+    font-size: 2.444rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-title-sm-size);
+    font-size: 2.666rem;
   }
 }
 
 .t-title-md {
-  font-size: var(--t-title-md-size-mobile);
+  font-size: 1.666rem;
 
   @include breakpoint(md) {
-    font-size: var(--t-title-md-size-desktop);
+    font-size: 2.666rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-title-md-size);
+    font-size: 2.888rem;
   }
 }
 
 .t-title-lg {
-  font-size: var(--t-title-lg-size-mobile);
+  font-size: 1.666rem;
 
   @include breakpoint(md) {
-    font-size: var(--t-title-lg-size-desktop);
+    font-size: 3.333rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-title-lg-size);
+    font-size: 3.555rem;
   }
 }
 
 .t-title-xl {
-  font-size: var(--t-title-xl-size-mobile);
-  line-height: calc(var(--t-title-line-height) - 0.05);
+  font-size: 1.666rem;
+  line-height: 1.17;
 
   @include breakpoint(sm) {
-    font-size: var(--t-title-xl-size-tablet);
+    font-size: 1.777rem;
   }
 
   @include breakpoint(md) {
-    font-size: var(--t-title-xl-size-desktop);
+    font-size: 3.777rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-title-xl-size);
+    font-size: 4rem;
   }
 }
 
 .t-title-2xl {
-  font-size: var(--t-title-2xl-size-mobile);
-  line-height: calc(var(--t-title-line-height) - 0.05);
+  font-size: 1.666rem;
+  line-height: 1.17;
 
   @include breakpoint(sm) {
-    font-size: var(--t-title-2xl-size-tablet);
+    font-size: 2rem;
   }
 
   @include breakpoint(md) {
-    font-size: var(--t-title-2xl-size-desktop);
+    font-size: 4.333rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-title-2xl-size);
+    font-size: 4.555rem;
   }
 }
 
 .t-title-3xl {
-  font-size: var(--t-title-3xl-size-mobile);
-  line-height: calc(var(--t-title-line-height) - 0.22);
+  font-size: 1.666rem;
+  line-height: 1;
 
   @include breakpoint(sm) {
-    font-size: var(--t-title-3xl-size-tablet);
+    font-size: 2rem;
   }
 
   @include breakpoint(md) {
-    font-size: var(--t-title-3xl-size-desktop);
+    font-size: 4.333rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-title-3xl-size);
-    line-height: var(--t-title-line-height);
+    font-size: 5.555rem;
+    line-height: 1.22;
   }
 }
 
 .t-title-4xl {
-  font-size: var(--t-title-4xl-size-mobile);
-  line-height: calc(var(--t-title-line-height) - 0.22);
+  font-size: 1.666rem;
+  line-height: 1;
 
   @include breakpoint(sm) {
-    font-size: var(--t-title-4xl-size-tablet);
+    font-size: 2rem;
   }
 
   @include breakpoint(md) {
-    font-size: var(--t-title-4xl-size-desktop);
+    font-size: 4.333rem;
   }
 
   @include breakpoint(xl) {
-    font-size: var(--t-title-4xl-size);
-    line-height: var(--t-title-line-height);
+    font-size: 7.222rem;
+    line-height: 1.22;
   }
 }

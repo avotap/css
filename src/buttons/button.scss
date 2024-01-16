@@ -4,17 +4,17 @@
 .t-btn {
   position: relative;
   display: inline-block;
-  padding: var(--t-btn-padding);
-  font-size: var(--t-btn-font-size);
-  font-weight: var(--t-btn-font-weight);
+  padding: 0.75rem 1.25rem;
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
   line-height: 20px; // Specifically not inherit our `<body>` default
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
   border: 1px solid;
-  border-color: var(--t-btn-border-color);
-  border-radius: var(--t-btn-border-radius);
+  border-color: transparent;
+  border-radius: 0.25rem;
   appearance: none; // Corrects inability to style clickable `input` types in iOS.
 
   &:hover {
@@ -36,8 +36,8 @@
 // Default button
 
 .t-btn {
-  color: var(--t-btn-color);
-  background-color: var(--t-btn-bg);
+  color: var(--t-fg-default);
+  background-color: transparent;
   transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
   transition-property: color, background-color, opacity, box-shadow, border-color;
 }
