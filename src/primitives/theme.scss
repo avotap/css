@@ -1,10 +1,10 @@
-$USER_PREFIX: 'u-';
 $THEME_PREFIX: 't-';
-$USER_THEME_PREFIX: 'ut-';
+$USER_PREFIX: 'u-';
 
 // build default
 @mixin default() {
-  :root {
+  :root,
+  .t-html {
     @each $key, $value in $default {
       --#{$THEME_PREFIX}#{$key}: #{$value};
     }
@@ -13,35 +13,32 @@ $USER_THEME_PREFIX: 'ut-';
 
 // build body
 @mixin body() {
-  :root {
+  :root,
+  .t-html {
     @each $key, $value in $body {
-      --#{$THEME_PREFIX}body-#{$key}: var(--#{$USER_PREFIX}#{$key}, #{$value});
+      --#{$THEME_PREFIX}body-#{$key}: var(--#{$USER_PREFIX}body-#{$key}, #{$value});
     }
   }
 }
 
 // build colors
 @mixin colors() {
-  :root {
+  :root,
+  .t-html {
     @each $token, $map in $colors {
       @each $key, $value in $map {
-        --#{$THEME_PREFIX}#{$token}-#{$key}: var(
-          --#{$USER_PREFIX}#{$key},
-          var(--#{$USER_THEME_PREFIX}#{$key}, #{$value})
-        );
+        --#{$THEME_PREFIX}#{$token}-#{$key}: var(--#{$USER_PREFIX}#{$token}-#{$key}, #{$value});
       }
     }
   }
 }
 
 @mixin elements() {
-  :root {
+  :root,
+  .t-html {
     @each $token, $map in $elements {
       @each $key, $value in $map {
-        --#{$THEME_PREFIX}#{$token}-#{$key}: var(
-          --#{$USER_PREFIX}#{$key},
-          var(--#{$USER_THEME_PREFIX}#{$key}, #{$value})
-        );
+        --#{$THEME_PREFIX}#{$token}-#{$key}: #{$value};
       }
     }
   }
@@ -49,10 +46,11 @@ $USER_THEME_PREFIX: 'ut-';
 
 // build typography
 @mixin typography() {
-  :root {
+  :root,
+  .t-html {
     @each $token, $map in $typography {
       @each $key, $value in $map {
-        --#{$THEME_PREFIX}#{$token}-#{$key}: var(--#{$USER_THEME_PREFIX}#{$token}-#{$key}, #{$value});
+        --#{$THEME_PREFIX}#{$token}-#{$key}: #{$value};
       }
     }
   }

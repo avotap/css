@@ -5,21 +5,23 @@
 
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-top: calc(-0.5 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-bottom: calc(-0.5 * var(--bs-gutter-y));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
 .t-row > * {
   width: 100%;
   max-width: 100%;
-  box-sizing: border-box;
-  // supposed to be margin instead of padding
-  // replaced because of the block-editing
-  padding-top: var(--bs-gutter-y);
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
   flex-shrink: 0;
+  box-sizing: border-box;
+  // xy supposed to be margin instead of padding
+  // replaced because of the block-editing
+  padding-top: calc(var(--bs-gutter-y) * 0.5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-bottom: calc(var(--bs-gutter-y) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
 }
 
 // Columns
