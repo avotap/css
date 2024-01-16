@@ -2,12 +2,12 @@
 // stylelint-disable selector-max-type
 
 // This is styling for generic markdownized text. Anything you put in a
-// container with .markdown-body on it should render generally well.
+// container with .md-body on it should render generally well.
 
 // Do not add: `font-family`, `font-size`, `line-height`
 // because of the parent class (i.e. `t-descr-xl markdown-body`)
 
-.markdown-body {
+.md-body {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;

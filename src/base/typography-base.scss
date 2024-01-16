@@ -38,13 +38,13 @@ dd {
 tt,
 code,
 samp {
-  font-family: $mono-font;
+  font-family: $font-stack-mono;
   font-size: $font-size-small;
 }
 
 pre {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: $mono-font;
+  font-family: $font-stack-mono;
   font-size: $font-size-small;
 }

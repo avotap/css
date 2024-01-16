@@ -1,7 +1,7 @@
 [class~='t-title'],
 [class*='t-title-'] {
-  font-family: var(--t-body-font-family-heading);
-  font-weight: var(--t-body-font-weight-bold);
+  font-family: $font-family-heading;
+  font-weight: $font-weight-bold;
   line-height: 1.22;
 }
 

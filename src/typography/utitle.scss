@@ -1,7 +1,6 @@
 [class~='t-utitle'],
 [class*='t-utitle-'] {
-  font-family: var(--t-body-font-family);
-  font-weight: var(--t-body-font-weight-bold);
+  font-weight: $font-weight-bold;
   letter-spacing: 2.5px;
 }
 

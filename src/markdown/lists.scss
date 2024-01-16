@@ -1,7 +1,7 @@
 // Base styles
 // stylelint-disable selector-no-qualifying-type
 // stylelint-disable selector-max-type
-.markdown-body {
+.md-body {
   // Because `reset.scss` contains `list-style-type: none;`
   // https://developer.mozilla.org/en-US/docs/Web/CSS/revert
   ul,
@@ -93,7 +93,7 @@
       margin-top: 16px;
       font-size: 1em;
       font-style: italic;
-      font-weight: var(--t-body-font-weight-bold);
+      font-weight: $font-weight-bold;
     }
 
     dd {

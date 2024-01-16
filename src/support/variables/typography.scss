@@ -8,8 +8,15 @@ $font-size-normal: 1rem !default;
 $font-weight-bold: var(--t-body-font-weight-bold) !default;
 $font-weight-normal: var(--t-body-font-weight) !default;
 
-// Font stacks
-$body-font: var(--t-font-stack) !default;
+// Font families
+$font-family-heading: var(--t-body-font-family-heading) !default;
+$font-family-default: var(--t-body-font-family) !default;
 
 // Monospace font stack
-$mono-font: var(--t-font-stack-mono) !default;
+$font-stack-mono: var(--t-font-stack-mono) !default;
+
+// Body
+$body-font-family: var(--t-body-font-family) !default;
+$body-font-size: var(--t-body-font-size) !default;
+$body-font-weight: var(--t-body-font-weight) !default;
+$body-line-height: var(--t-body-line-height) !default;

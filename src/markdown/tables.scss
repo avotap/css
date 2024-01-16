@@ -1,6 +1,6 @@
 // Needs refactoring
 // stylelint-disable selector-max-type, selector-max-compound-selectors
-.markdown-body {
+.md-body {
   // Tables
   table {
     display: block;
@@ -10,7 +10,7 @@
     overflow: auto;
 
     th {
-      font-weight: var(--t-body-font-weight-bold);
+      font-weight: $font-weight-bold;
     }
 
     th,
