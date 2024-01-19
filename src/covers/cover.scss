@@ -1,21 +1,27 @@
-.t-cover,
-.t-cover-filter {
-  width: 100%;
-  height: 900px;
+.t-cover {
+  height: 700px;
+  overflow: hidden;
+  vertical-align: middle;
 }
 
-.t-cover {
+.t-cover-carrier,
+.t-cover-filter {
+  width: 100%;
+  height: 100%;
+}
+
+.t-cover-carrier {
   position: relative;
   overflow: hidden;
   vertical-align: middle;
-  background-color: #000;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
 }
 
-.t-cover-filter {
+.t-cover-filter,
+.t-cover-content {
   position: absolute;
   inset: 0;
 }
