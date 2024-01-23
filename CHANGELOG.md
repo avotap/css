@@ -1,5 +1,11 @@
 # @avotap/css
 
+## 0.1.2
+
+### Patch Changes
+
+- c8c6309: updated cover styles
+
 ## 0.1.1
 
 ### Patch Changes
