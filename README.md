@@ -33,6 +33,15 @@ Under development.
 
 https://github.com/avotap/css/releases
 
+## Develop
+
+Here's a separate document for [developers](https://github.com/avotap/css/blob/main/DEVELOPERS.md).
+
+## Contribute
+
+We've set up a separate document for our
+[contribution guidelines](https://github.com/avotap/css/blob/main/CONTRIBUTING.md).
+
 ## Special thanks:
 
 - This repository is based on [Primer](https://github.com/primer/css) v21.0.10 | MIT License.
