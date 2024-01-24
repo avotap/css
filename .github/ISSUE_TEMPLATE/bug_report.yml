@@ -26,6 +26,7 @@ body:
     attributes:
       label: The Avotap/css version where this bug is happening.
       options:
+        - 'v0.1.2'
         - 'v0.1.1'
         - 'v0.1.0'
         - 'Other (please specify in description)'
@@ -45,6 +46,7 @@ body:
       label: Which version did this behavior use to work in?
       description: In case you checked the regression bug checkbox, please provide the version in which this bug was not present.
       options:
+        - 'v0.1.2'
         - 'v0.1.1'
         - 'v0.1.0'
         - 'Other (please specify in description)'
