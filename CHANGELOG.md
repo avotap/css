@@ -1,5 +1,11 @@
 # @avotap/css
 
+## 0.1.3
+
+### Patch Changes
+
+- 07e1f1f: added card styles
+
 ## 0.1.2
 
 ### Patch Changes
