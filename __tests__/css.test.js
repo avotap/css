@@ -1,4 +1,3 @@
-import semver from 'semver'
 import {
   getCurrentVersion,
   getPackageStats,

@@ -1,27 +1,27 @@
 #!/usr/bin/env node
 import postcss from 'postcss'
-import { join } from 'path'
+import {join} from 'path'
 import fs from 'fs'
 import atImport from 'postcss-import'
 import syntax from 'postcss-scss'
 import calc from 'postcss-calc'
 import simpleVars from 'postcss-simple-vars'
 
-import { dirname } from 'path'
-import { fileURLToPath } from 'url'
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
-const __dirname = dirname(fileURLToPath(import.meta.url))
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const processor = postcss([
-  atImport({ path: ['src'] }),
+  atImport({path: ['src']}),
   collectVariables(),
-  simpleVars({ includePaths: [join(__dirname, '../src/support/variables')] }),
+  simpleVars({includePaths: [join(__dirname, '../src/support/variables')]})
 ])
 
 async function analyzeVariables(fileName) {
   const contents = fs.readFileSync(fileName, 'utf8')
 
-  const result = await processor.process(contents, { from: fileName, map: false, syntax })
+  const result = await processor.process(contents, {from: fileName, map: false, syntax})
   for (const message of result.messages) {
     if (message.plugin === 'postcss-simple-vars' && message.type === 'variable') {
       if (!result.variables[`$${message.name}`].values.includes(message.value)) {
@@ -72,8 +72,8 @@ function collectVariables() {
               values: [node.value],
               source: {
                 path: fileName,
-                line: node.source.start.line,
-              },
+                line: node.source.start.line
+              }
             }
           } else {
             node.remove()
@@ -81,13 +81,14 @@ function collectVariables() {
         },
         OnceExit() {
           result.variables = variables
-        },
+        }
       }
-    },
+    }
   }
 }
 
 export default analyzeVariables
+
 ;(async () => {
   const args = process.argv.slice(2)
   const file = args.length ? args.shift() : 'src/support/index.scss'
