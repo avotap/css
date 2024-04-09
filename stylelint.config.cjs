@@ -61,5 +61,7 @@ module.exports = {
     'keyframe-selector-notation': ['percentage-unless-within-keyword-only-block'],
     'media-query-no-invalid': null,
     'media-feature-range-notation': ['prefix'],
+    // extra2:
+    'no-empty-source': null,
   },
 }
