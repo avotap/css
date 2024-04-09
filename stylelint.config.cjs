@@ -12,6 +12,7 @@ module.exports = {
     'stylelint-scss',
   ],
   rules: {
+    // default:
     'alpha-value-notation': 'number',
     'at-rule-disallowed-list': ['extend'],
     'at-rule-no-unknown': null,
@@ -43,6 +44,7 @@ module.exports = {
     'number-max-precision': null,
     'order/properties-order': propertyOrder,
     'plugin/no-unsupported-browser-features': [true, {severity: 'warning', browsers}],
+    // extra:
     'selector-class-pattern': null,
     'selector-max-compound-selectors': 3,
     'selector-max-id': 0,
