@@ -7,45 +7,21 @@
 }
 
 .t-utitle-xs {
-  font-size: 0.555rem;
-
-  @include breakpoint(md) {
-    font-size: 0.666rem;
-  }
+  font-size: 0.75rem;
 }
 
 .t-utitle-sm {
-  font-size: 0.555rem;
-
-  @include breakpoint(md) {
-    font-size: 0.666rem;
-  }
-
-  @include breakpoint(xl) {
-    font-size: 0.777rem;
-  }
+  font-size: 0.875rem;
 }
 
 .t-utitle-md {
-  font-size: 0.666rem;
-
-  @include breakpoint(md) {
-    font-size: 0.777rem;
-  }
-
-  @include breakpoint(xl) {
-    font-size: 0.888rem;
-  }
+  font-size: 1rem;
 }
 
 .t-utitle-lg {
-  font-size: 0.666rem;
+  font-size: 1rem;
 
   @include breakpoint(md) {
-    font-size: 0.777rem;
-  }
-
-  @include breakpoint(xl) {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }

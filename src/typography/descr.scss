@@ -1,70 +1,42 @@
-[class~='t-descr'],
-[class*='t-descr-'] {
-  font-weight: var(--t-body-font-weight);
+.t-descr-2xs {
+  font-size: 0.75;
   line-height: 1.55;
 }
 
-.t-descr-2xs {
-  font-size: 0.666rem;
-
-  @include breakpoint(xl) {
-    font-size: 0.777rem;
-  }
-}
-
 .t-descr-xs {
-  font-size: 0.666rem;
-
-  @include breakpoint(md) {
-    font-size: 0.777rem;
-  }
-
-  @include breakpoint(xl) {
-    font-size: 0.888rem;
-  }
+  font-size: 0.875rem;
+  line-height: 1.55;
 }
 
 .t-descr-sm {
-  font-size: 0.777rem;
-
-  @include breakpoint(md) {
-    font-size: 0.888rem;
-  }
-
-  @include breakpoint(xl) {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
 .t-descr-md {
-  font-size: 0.888rem;
-
-  @include breakpoint(md) {
-    font-size: 1rem;
-  }
-
-  @include breakpoint(xl) {
-    font-size: 1.111rem;
-  }
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
 .t-descr-lg {
   font-size: 1rem;
+  line-height: 1.55;
 
   @include breakpoint(md) {
     font-size: 1.111rem;
   }
 
   @include breakpoint(xl) {
-    font-size: 1.222rem;
+    font-size: 1.25rem;
   }
 }
 
 .t-descr-xl {
   font-size: 1.111rem;
+  line-height: 1.55;
 
   @include breakpoint(md) {
-    font-size: 1.222rem;
+    font-size: 1.25rem;
   }
 
   @include breakpoint(xl) {
@@ -74,9 +46,10 @@
 
 .t-descr-2xl {
   font-size: 1.111rem;
+  line-height: 1.55;
 
   @include breakpoint(md) {
-    font-size: 1.222rem;
+    font-size: 1.25rem;
   }
 
   @include breakpoint(xl) {
@@ -85,7 +58,8 @@
 }
 
 .t-descr-3xl {
-  font-size: 1.222rem;
+  font-size: 1.25rem;
+  line-height: 1.55;
 
   @include breakpoint(md) {
     font-size: 1.444rem;

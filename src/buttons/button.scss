@@ -13,7 +13,6 @@
   cursor: pointer;
   user-select: none;
   border: 1px solid;
-  border-color: transparent;
   border-radius: 0.25rem;
   appearance: none; // Corrects inability to style clickable `input` types in iOS.
 
@@ -38,6 +37,17 @@
 .t-btn {
   color: var(--t-fg-default);
   background-color: transparent;
+  border-color: transparent;
   transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
   transition-property: color, background-color, opacity, box-shadow, border-color;
+
+  &:hover,
+  &.hover,
+  [open] > & {
+    transition-duration: 0.1s;
+  }
+
+  &:active {
+    transition: none;
+  }
 }

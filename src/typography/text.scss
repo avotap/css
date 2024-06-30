@@ -1,5 +1,5 @@
-[class~='t-text'],
-[class*='t-text-'] {
+.t-text-xs {
+  font-size: 0.75rem;
   line-height: 1.55;
 
   @include breakpoint(md) {
@@ -7,50 +7,76 @@
   }
 }
 
-.t-text-xs {
-  font-size: 0.666rem;
-
-  @include breakpoint(md) {
-    font-size: 0.777rem;
-  }
-
-  @include breakpoint(xl) {
-    font-size: 0.833rem;
-  }
-}
-
 .t-text-sm {
-  font-size: 0.777rem;
+  font-size: 0.875rem;
+  line-height: 1.55;
 
   @include breakpoint(md) {
-    font-size: 0.888rem;
-  }
-
-  @include breakpoint(xl) {
-    font-size: 1rem;
+    line-height: 1.45;
   }
 }
 
 .t-text-md {
-  font-size: 0.888rem;
+  font-size: 1rem;
+  line-height: 1.55;
 
   @include breakpoint(md) {
-    font-size: 1rem;
-  }
-
-  @include breakpoint(xl) {
-    font-size: 1.111rem;
+    line-height: 1.45;
   }
 }
 
 .t-text-lg {
   font-size: 1rem;
+  line-height: 1.55;
 
   @include breakpoint(md) {
-    font-size: 1.111rem;
+    font-size: 1.125rem;
+    line-height: 1.45;
   }
+}
 
-  @include breakpoint(xl) {
-    font-size: 1.222rem;
+.t-text-xl {
+  font-size: 1rem;
+  line-height: 1.55;
+
+  @include breakpoint(md) {
+    font-size: 1.25rem;
+    line-height: 1.45;
+  }
+}
+
+// Relaxed
+// --------------------------------------------------
+
+.t-text-xs\/relaxed {
+  font-size: 0.75rem;
+  line-height: 1.625;
+}
+
+.text-sm\/relaxed {
+  font-size: 0.875rem;
+  line-height: 1.625;
+}
+
+.t-text-md\/relaxed {
+  font-size: 1rem;
+  line-height: 1.625;
+}
+
+.t-text-lg\/relaxed {
+  font-size: 1rem;
+  line-height: 1.625;
+
+  @include breakpoint(md) {
+    font-size: 1.125rem;
+  }
+}
+
+.t-text-xl\/relaxed {
+  font-size: 1rem;
+  line-height: 1.625;
+
+  @include breakpoint(md) {
+    font-size: 1.25rem;
   }
 }
